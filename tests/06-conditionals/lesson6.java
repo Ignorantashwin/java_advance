@@ -1,10 +1,8 @@
 import java.util.Scanner;
 
-public class Main {
+public class lesson6 {
     public static void main(String[] args) {
-        // Print the greeting below.
-    
-      Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         if(n %15==0){
          System.out.println("FizzBuzz");
@@ -12,7 +10,6 @@ public class Main {
             System.out.println("Buzz");
         }else if (n%3==0) {
             System.out.println("Fizz");
-        } else System.out.println(n);
-
+        }
     }
 }
