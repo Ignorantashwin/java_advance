@@ -1,13 +1,10 @@
 import java.util.Scanner;
 
-public class Main {
+public class lesson8 {
     public static void main(String[] args) {
-        // Print the greeting below.
-    
-      Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         System.out.println(square(n));
-       
     }
     static int square(int n){
         return n*n;
