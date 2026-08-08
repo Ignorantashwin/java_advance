@@ -11,15 +11,7 @@ public class lesson9 {
        
 }
 static int sumSquare(int a1 , int a2, int b1, int b2){
-     int totalSum = 0;
-     if (a1 > b1 && a2 > b2) {
-        totalSum = (a1*a1) - (b1*b1) + (a2*a2) - (b2*b2);
-        return totalSum;
-     }
-     else {
-     totalSum =   (b1*b1)- (a1*a1) +  (b2*b2)- (a2*a2);
-     }
+ return Math.abs( (a1*a1) - (b1*b1) ) + Math.abs( (a2*a2) - (b2*b2) );
      
-        return totalSum;
     }
 }
