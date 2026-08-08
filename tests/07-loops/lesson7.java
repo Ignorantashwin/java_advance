@@ -1,15 +1,12 @@
 import java.util.Scanner;
-
-public class Main {
+public class lesson7 {
     public static void main(String[] args) {
-        // Print the greeting below.
-    
-      Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int sum =0;
+        int sum = 0;
         for (int i = 1; i <= n; i++) {
             sum+=i;
         }
-     System.out.println(sum);
+        System.out.println(sum);
     }
 }
