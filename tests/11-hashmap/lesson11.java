@@ -1,0 +1,16 @@
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class lesson11 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        String[] words = sc.nextLine().split(" ");
+        HashSet<String> set = new HashSet<>();
+        for(String w : words){
+            set.add(w);
+        }
+        System.out.println(set.size());
+    }
+    
+}

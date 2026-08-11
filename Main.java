@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class Main {
@@ -7,16 +7,11 @@ public class Main {
         // Print the greeting below.
     
       Scanner sc = new Scanner(System.in);
-     String line = sc.nextLine();
-     String[] arr = line.split(" ");
-     int max = Integer.MIN_VALUE;
-     for (int i = 0; i < arr.length; i++) {
-        int v = Integer.parseInt(arr[i]);
-        if (max < v) {
-            max = v;
-        }
-     }
- System.out.println(max);
-       
+      String[] words = sc.nextLine().split(" ");
+      HashSet<String> set = new HashSet<>();
+      for(String w : words){
+        set.add(w);
+      }
+     System.out.println(set.size());
 }
 }
