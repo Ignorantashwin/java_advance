@@ -1,4 +1,5 @@
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;
 
@@ -7,11 +8,8 @@ public class Main {
         // Print the greeting below.
     
       Scanner sc = new Scanner(System.in);
-      String[] words = sc.nextLine().split(" ");
-      HashSet<String> set = new HashSet<>();
-      for(String w : words){
-        set.add(w);
-      }
-     System.out.println(set.size());
+      int[]arr = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer :: parseInt).toArray();
+      int result = Arrays.stream(arr).filter(n -> n%2==0).map(n -> n*n).sum();
+      System.out.println(result);
 }
 }
