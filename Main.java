@@ -1,15 +1,31 @@
-
-import java.util.Arrays;
-import java.util.HashSet;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         // Print the greeting below.
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+    Animal d = new Dog(name);
+    System.out.println(d.greet(name));
     
-      Scanner sc = new Scanner(System.in);
-      int[]arr = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer :: parseInt).toArray();
-      int result = Arrays.stream(arr).filter(n -> n%2==0).map(n -> n*n).sum();
-      System.out.println(result);
+}
+static class Animal{
+    protected String name;
+
+    public Animal(String name){
+        this.name = name;
+    }
+    public String greet(String name){
+        return name + "says hello";
+    }
+}
+static class Dog extends Animal{
+    public Dog(String name){
+        super(name);
+    }
+    @Override
+    public String greet(String name){
+        return name + " says woof";
+    }
 }
 }
